@@ -26,9 +26,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.+'
 }
 
-version = "1.0"
-def siteUrl = 'https://github.com/ZhangQinglian/Android-Luffy'// project homepage
-def gitUrl = 'https://github.com/ZhangQinglian/Android-Luffy.git'// project git
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+version = "1.0.1"
+def siteUrl = 'https://github.com/ZhangQinglian/CommitToJcenter'// project homepage
+def gitUrl = 'https://github.com/ZhangQinglian/CommitToJcenter.git'// project git
 group = "com.zql.android"
 
 install {
@@ -37,7 +39,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                name 'Luffy For Android'
+                name 'Just a demo for jcenter'
                 url siteUrl
                 licenses {
                     license {
@@ -93,7 +95,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "luffy" // project name in jcenter
+        name = "jad" // project name in jcenter
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
