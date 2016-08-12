@@ -1,5 +1,3 @@
-![Android Studio发布library到Jcenter](http://upload-images.jianshu.io/upload_images/2702499-b829cacc3324bdc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 # 前言  
 各位码友不知道有没有发现，不知道从何时，Android Studio的Gradle构建系统就已经把Jcenter作为默认的远程仓库了，如下：  
 
@@ -266,6 +264,3 @@ dependencies {
 运行结果如下：
 
 ![运行结果](http://upload-images.jianshu.io/upload_images/2702499-cece63e6f12e99e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-# 小结
-最后献上这个CommitToJcenter的[github地址](https://github.com/ZhangQinglian/CommitToJcenter)。
